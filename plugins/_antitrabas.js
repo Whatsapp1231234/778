@@ -24,7 +24,7 @@ export async function before(m, { conn, isAdmin, isBotAdmin, usedPrefix }) {
   const delet = m.key.participant;
   const bang = m.key.id;
   const name = await conn.getName(m.sender);
-  const fakemek = { 'key': { 'participant': '0@s.whatsapp.net', 'remoteJid': '0@s.whatsapp.net' }, 'message': { 'groupInviteMessage': { 'groupJid': '+79011033947-1616969743@g.us', 'inviteCode': 'm', 'groupName': 'P', 'caption': 'Хулиган', 'jpegThumbnail': null } } };
+  const fakemek = { 'key': { 'participant': '0@s.whatsapp.net', 'remoteJid': '0@s.whatsapp.net' }, 'message': { 'groupInviteMessage': { 'groupJid': '+79187653090-1616969743@g.us', 'inviteCode': 'm', 'groupName': 'P', 'caption': 'Хищник', 'jpegThumbnail': null } } };
   if (chat.antiTraba && m.text.length > 5000) { // Cantidad máxima de caracteres aceptados en un mensaje.
     if (isAdmin) return conn.sendMessage(m.chat, { text: `${tradutor.texto1} @${m.sender.split('@')[0]} ${tradutor.texto1_1}`, mentions: [m.sender] }, { quoted: fakemek });
     conn.sendMessage(m.chat, `${tradutor.texto2}`, `${isBotAdmin ? '' : `${tradutor.texto2_1}`}`, m);
