@@ -31,7 +31,7 @@ const handler = async (m, { conn, usedPrefix }) => {
   const wm = 'The Mystic Bot';
   const info = ` ${tradutor.texto1[0]}
 
-     Серёга
+     Михаил
    +79187653090
    
 
